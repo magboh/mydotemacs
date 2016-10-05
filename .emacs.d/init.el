@@ -18,5 +18,8 @@
 ;Initiate global key bindings
 (require 'global-bindings)
 
+;Setup packages mgt system
+(require 'packages)
+
 ;Initiate theme
 (require 'theme)
