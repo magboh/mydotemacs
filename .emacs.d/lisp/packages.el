@@ -10,4 +10,7 @@
 	   (file-exists-p  "~/.emacs.d/elpa/refresh-me")
   (package-refresh-contents))
 
+(package-install 'auto-complete)
+(package-install 'ac-slime)
+
 (provide 'packages)

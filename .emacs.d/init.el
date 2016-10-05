@@ -23,3 +23,6 @@
 
 ;Initiate theme
 (require 'theme)
+
+;Initiate additional modes
+(require 'modes)
