@@ -12,5 +12,9 @@
 ;Initiate defaults
 (require 'defaults)
 
+;Initiate global modes
+(require 'global-modes)
+
 ;Initiate global key bindings
 (require 'global-bindings)
+
