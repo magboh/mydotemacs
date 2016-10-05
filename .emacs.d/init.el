@@ -18,3 +18,5 @@
 ;Initiate global key bindings
 (require 'global-bindings)
 
+;Initiate theme
+(require 'theme)
