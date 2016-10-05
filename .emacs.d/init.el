@@ -9,5 +9,8 @@
 ; Adds our lisp dir to load path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+;Initiate defaults
+(require 'defaults)
+
 ;Initiate global key bindings
 (require 'global-bindings)
