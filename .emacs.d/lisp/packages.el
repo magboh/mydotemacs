@@ -10,9 +10,14 @@
 	   (file-exists-p  "~/.emacs.d/elpa/refresh-me")
   (package-refresh-contents))
 
-(package-install 'auto-complete)
-(package-install 'ac-slime)
-(package-install 'mic-paren)
-(package-install 'magit)
+(defvar my-packages '(ac-slime
+		      auto-complete
+		      cider
+		      clojure-mode
+		      magit
+		      mic-paren))
+
+(dolist (p my-packages)
+  (package-install p))
 
 (provide 'packages)
