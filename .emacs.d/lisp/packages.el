@@ -13,5 +13,6 @@
 (package-install 'auto-complete)
 (package-install 'ac-slime)
 (package-install 'mic-paren)
+(package-install 'magit)
 
 (provide 'packages)
