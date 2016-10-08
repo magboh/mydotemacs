@@ -13,8 +13,11 @@
   (auto-complete-mode t)
 
   (require 'slime)
-  (require 'ac-slime))
+  (require 'ac-slime)
 
+  (require 'mic-paren)
+  (paren-activate)
+) 
 
 (add-hook 'lisp-mode-hook 'my/lisp-mode-hook)
 (add-hook 'emacs-lisp-mode-hook 'my/lisp-mode-hook)
