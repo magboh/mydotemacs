@@ -19,7 +19,9 @@
                       go-mode
                       flycheck
 		      magit
-		      mic-paren))
+		      mic-paren
+                      projectile
+                      ))
 
 (dolist (p my-packages)
   (package-install p))
