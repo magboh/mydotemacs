@@ -15,6 +15,10 @@
   (paren-activate)
 
   (my/init-company)
+
+  (require 'flycheck)
+  (flycheck-mode)
+  (setq flycheck-idle-change-delay 5)
 )
 
 ; Treat all .h, .hpp files as c++

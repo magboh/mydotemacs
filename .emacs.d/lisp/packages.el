@@ -17,6 +17,7 @@
                       company
                       company-go
                       go-mode
+                      flycheck
 		      magit
 		      mic-paren))
 
