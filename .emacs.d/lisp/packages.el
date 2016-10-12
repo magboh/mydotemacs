@@ -14,6 +14,7 @@
 		      auto-complete
 		      cider
 		      clojure-mode
+                      go-mode
 		      magit
 		      mic-paren))
 
