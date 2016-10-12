@@ -7,4 +7,5 @@
 
 (global-set-key (kbd "C-c v s") 'magit-status)
 
+(global-set-key (kbd "C-c n g") 'goto-line)
 (provide 'global-bindings)
