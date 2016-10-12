@@ -8,4 +8,11 @@
 (global-set-key (kbd "C-c v s") 'magit-status)
 
 (global-set-key (kbd "C-c n g") 'goto-line)
+
+(global-set-key (kbd "C-c b r") 'revert-buffer)
+(global-set-key (kbd "C-c b k") 'kill-some-buffers)
+
+(global-set-key (kbd "C-c w m") 'whitespace-mode)
+(global-set-key (kbd "C-c w c") 'whitespace-cleanup)
+
 (provide 'global-bindings)
