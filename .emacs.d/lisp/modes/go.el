@@ -2,6 +2,14 @@
 ;; go-mode needs gocode and godef installed
 ;; to work properly.
 
+(defun my/init-go-company ()
+  (require 'company-go)
+  (company-go t)
+
+  ; Make company-go sole backend of company
+  (set (make-local-variable 'company-backends) '(company-go))
+  )
+
 (defun my/init-go-bindings ()
   (local-set-key (kbd "C-c c d") 'godef-describe)
   (local-set-key (kbd "C-c c r") 'go-remove-unused-imports)
@@ -24,6 +32,9 @@
   (add-hook 'before-save-hook #'gofmt-before-save)
 
   (my/init-go-bindings)
+
+  (my/init-company)
+  (my/init-go-company)
   )
 
 (add-hook 'go-mode-hook 'my/go-mode-hook)

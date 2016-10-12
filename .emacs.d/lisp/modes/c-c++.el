@@ -13,6 +13,8 @@
 
   (require 'mic-paren)
   (paren-activate)
+
+  (my/init-company)
 )
 
 ; Treat all .h, .hpp files as c++
