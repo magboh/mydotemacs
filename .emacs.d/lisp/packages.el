@@ -21,6 +21,7 @@
 		      magit
 		      mic-paren
                       projectile
+                      rtags
                       ))
 
 (dolist (p my-packages)
