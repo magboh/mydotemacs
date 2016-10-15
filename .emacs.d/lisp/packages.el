@@ -7,7 +7,7 @@
 (package-initialize)
 
 (when (or (not (file-exists-p "~/.emacs.d/elpa")))
-	   (file-exists-p  "~/.emacs.d/elpa/refresh-me")
+  (file-exists-p  "~/.emacs.d/elpa/refresh-me")
   (package-refresh-contents))
 
 (defvar my-packages '(ac-slime
@@ -19,6 +19,7 @@
                       go-mode
                       flycheck
 		      magit
+                      markdown-mode
 		      mic-paren
                       projectile
                       rtags
