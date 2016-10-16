@@ -23,6 +23,7 @@
 		      mic-paren
                       projectile
                       rtags
+                      yasnippet
                       ))
 
 (dolist (p my-packages)

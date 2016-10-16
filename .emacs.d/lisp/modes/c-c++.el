@@ -19,7 +19,10 @@
   (require 'flycheck)
   (flycheck-mode)
   (setq flycheck-idle-change-delay 5)
-)
+
+  (require 'yasnippet)
+  (yas-global-mode)
+  )
 
 ; Treat all .h, .hpp files as c++
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))

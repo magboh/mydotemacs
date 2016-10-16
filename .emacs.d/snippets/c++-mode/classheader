@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: classheader
+# key: classheader
+# --
+#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#define $1
+
+class $2 {
+public:
+     $2() {}
+     ~$2() {}
+
+    $2(const $2&) = delete;
+    $2 operator =(const $2&) = delete;
+private:
+    $0
+};
+
+#endif // $1 

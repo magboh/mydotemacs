@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: getset
+# key: getset
+# --
+void set$1($2 $3)
+{
+    $4 = $3;
+}
+
+$2 get$1()
+{
+    return $4;
+}
